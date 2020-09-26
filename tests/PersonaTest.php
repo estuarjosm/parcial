@@ -23,7 +23,7 @@ class PersonaTest extends TestCase{
 		
 		$this->assertEquals($persona1->getPersona(), json_encode($formato));
 
-		echo "\nFormato JSON Clase Persona = " . $persona1->getPersona();
+		echo "\nClase Persona: Formato JSON Verificado = " . $persona1->getPersona();
 	}
 }
 

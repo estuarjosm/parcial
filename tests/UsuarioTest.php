@@ -25,11 +25,11 @@ class UsuarioTest extends TestCase{
 		
 		$this->assertEquals($usuario1->getUsuario(), json_encode($uformato));
 
-		echo "\nFormato JSON Clase Usuario = " . $usuario1->getUsuario();
+		echo "\nClase Usuario: Formato JSON Verificado = " . $usuario1->getUsuario();
 		
 		$this->assertTrue(password_verify($uContra, $usuario1->getPass()));
 
-		echo "\nEncriptado y desencriptado de contraseña con exito";
+		echo "\nClase Usuario: Encriptado y desencriptado de contraseña con exito";
 	}
 
 }

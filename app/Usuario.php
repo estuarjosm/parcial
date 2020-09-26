@@ -34,7 +34,7 @@ class Usuario {
 		$udatos = array(
 			'Nombre' => $this->nombreU,
 			'Correo' => $this->correoU,
-			'Rol' => $this->rolU);
+			'Rol' => $this->rolU	);			
 		return json_encode($udatos);
 	}	
 	

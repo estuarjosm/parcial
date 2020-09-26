@@ -26,7 +26,7 @@ class DocumentoTributarioTest extends TestCase{
 		
 		$this->assertEquals($docu1->getDocumentoTributario(), json_encode($dtformato));
 
-		echo "\nFormato JSON Clase Documento Tributario = " . $docu1->getDocumentoTributario();
+		echo "\nClase Documento Tributo: Formato JSON Verificado = " . $docu1->getDocumentoTributario();
 	}
 }
 
