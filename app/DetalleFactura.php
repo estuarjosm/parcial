@@ -32,12 +32,5 @@ class DetalleFactura {
 	}	
 }
 
-$deatelle1 = new DetalleFactura();
-$deatelle1->setNumeroDF(2);
-$deatelle1->setCodigoProductoDF(2);
-$deatelle1->setCantidadProductoDF(2);
-$deatelle1->setPrecioProductoDF(2);
-
-echo $deatelle1->getDetalleFactura();
 ?>
 
