@@ -25,6 +25,9 @@ steps:
 - script: composer install --no-interaction --prefer-dist
   displayName: 'composer install'
 
+- script: composer dump-autoload
+  displayName: 'Configuracion'
+
 - script: sudo chmod 777 vendor/bin/
   displayName: 'Permiso'
 
