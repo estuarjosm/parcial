@@ -26,7 +26,7 @@ steps:
   displayName: 'composer install'
 
 - script: composer require --dev phpunit/phpunit ^8
-- displayName: 'intalar phpunit'
+  displayName: 'intalar phpunit'
 
 - script: composer dump-autoload
   displayName: 'Configuracion'
