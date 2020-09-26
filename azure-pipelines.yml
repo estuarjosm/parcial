@@ -30,12 +30,15 @@ steps:
 
 - script: composer dump-autoload
   displayName: 'Configuracion'
- 
+
 - script: cat composer.json
   displayName: 'Ver archivo'
 
 - script: sudo chmod 777 vendor/bin/
   displayName: 'Permiso'
-
+  
+- script: chmod +x vendor/bin/phpunit
+  displayName: 'Correr'
+  
 - script: vendor/bin/phpunit tests/PersonaTest.php  
   displayName: 'Pruebas unitarias'
