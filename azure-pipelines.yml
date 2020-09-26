@@ -40,5 +40,5 @@ steps:
 - script: chmod +x vendor/bin/phpunit
   displayName: 'Correr'
   
-- script: vendor/bin/phpunit tests/PersonaTest.php  
+- script: vendor/bin/phpunit
   displayName: 'Pruebas unitarias'
