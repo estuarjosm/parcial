@@ -37,5 +37,5 @@ steps:
 - script: sudo chmod 777 vendor/bin/
   displayName: 'Permiso'
 
-- script: sudo vendor/bin/phpunit 
+- script: ./phpunit 
   displayName: 'Pruebas unitarias'
