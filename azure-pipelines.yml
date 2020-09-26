@@ -27,6 +27,9 @@ steps:
 
 - script: composer dump-autoload
   displayName: 'Configuracion'
+ 
+- script: cat composer.json
+  displayName: 'Ver archivo'
 
 - script: sudo chmod 777 vendor/bin/
   displayName: 'Permiso'
