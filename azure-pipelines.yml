@@ -25,7 +25,7 @@ steps:
 - script: composer install --no-interaction --prefer-dist
   displayName: 'composer install'
 
-- script: sudo chmod 777 vendor/bin/phpunit.sh 
+- script: sudo chmod 777 vendor/bin/
   displayName: 'Permiso'
 
 - script: vendor/bin/phpunit.sh  
