@@ -29,8 +29,7 @@ steps:
   displayName: 'Configuracion'
 
 - script: sudo chmod 777 vendor/bin/
-- script: -ls
   displayName: 'Permiso'
 
-- script: vendor/bin/phpunit 
+- script: php vendor/bin/phpunit 
   displayName: 'Pruebas unitarias'
