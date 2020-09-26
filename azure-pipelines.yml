@@ -34,7 +34,7 @@ steps:
 - script: cat composer.json
   displayName: 'Ver archivo'
 
-- script: sudo chmod 777 vendor/bin/
+- script: sudo chmod 777 /home/vsts/work/1/s/vendor/phpunit/phpunit/phpunit
   displayName: 'Permiso'
   
 - script: chmod +x vendor/bin/phpunit
