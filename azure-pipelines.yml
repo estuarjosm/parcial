@@ -20,25 +20,25 @@ steps:
     sudo update-alternatives --set php-cgi /usr/bin/php-cgi$(phpVersion)
     sudo update-alternatives --set phar.phar /usr/bin/phar.phar$(phpVersion)
     php -version
-  displayName: 'Use PHP version $(phpVersion)'
+  displayName: 'Versión PHP'
 
 - script: composer install --no-interaction --prefer-dist
-  displayName: 'composer install'
+  displayName: 'Instalar Composer'
 
 - script: composer require --dev phpunit/phpunit ^8
-  displayName: 'intalar phpunit'
+  displayName: 'Instalar phpunit'
 
 - script: composer dump-autoload
-  displayName: 'Configuracion'
+  displayName: 'Configuración Composer'
 
 - script: cat composer.json
-  displayName: 'Ver archivo'
+  displayName: 'Verificar Configuración Composer'
 
 - script: sudo chmod 777 /home/vsts/work/1/s/vendor/phpunit/phpunit/phpunit
-  displayName: 'Permiso'
+  displayName: 'Permiso para phpunit'
   
 - script: chmod +x vendor/bin/phpunit
-  displayName: 'Correr'
+  displayName: 'Identificar phpunit como ejecutable'
   
 - script: vendor/bin/phpunit
-  displayName: 'Pruebas unitarias'
+  displayName: 'Pruebas unitarias de las Clases'

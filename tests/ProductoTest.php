@@ -25,6 +25,9 @@ class ProductoTest extends TestCase{
 			'Stock' => $pStock);
 
 	$this->assertEquals($producto1->getProducto(), json_encode($pformato));
+
+	echo "\n Formato JSON Clase Producto = " . $producto1->getProducto(); 
+
 	}
 }
 

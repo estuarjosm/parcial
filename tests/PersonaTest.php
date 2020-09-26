@@ -11,17 +11,19 @@ class PersonaTest extends TestCase{
 		$pDireccion = "4 calle 10-80, Escuintla";
 		$pCorreo = "miguel@gmail.com";
 
-		$persona = new Persona();
-		$persona->setNombre($pNombre);
-		$persona->setDireccion($pDireccion);
-		$persona->setCorreo($pCorreo);
+		$persona1 = new Persona();
+		$persona1->setNombre($pNombre);
+		$persona1->setDireccion($pDireccion);
+		$persona1->setCorreo($pCorreo);
 
 		$formato = array(
 			'Nombre' => $pNombre,
 			'Direccion' => $pDireccion,
 			'Correo' => $pCorreo);
 		
-		$this->assertEquals($persona->getPersona(), json_encode($formato));
+		$this->assertEquals($persona1->getPersona(), json_encode($formato));
+
+		echo "\n Formato JSON Clase Persona = " . $persona1->getPersona();
 	}
 }
 
